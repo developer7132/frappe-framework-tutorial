@@ -1,0 +1,152 @@
+Exception in thread Exception in thread Exception in thread Thread-1:
+Thread-1:
+Thread-1Traceback (most recent call last):
+:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+            self.run()self.run()
+self.run()
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+      File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    self._read_from_socket(timeout=timeout,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    return self._parser.can_read(timeout)
+      File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Exception in thread Thread-1:
+Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    self.run()
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return self._parser.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+Exception in thread Exception in thread Thread-1:
+Thread-1:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()    
+self.run()
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.run()
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    return self._parser.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return self._parser.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/nic/Documents/saif_bench/frappe-bench/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.

@@ -1,0 +1,77 @@
+2021-07-28 00:29:40,663 DEBUG cd frappe-bench && /usr/local/bin/virtualenv -q env -p python3
+2021-07-28 00:29:41,276 LOG Getting app frappe
+2021-07-28 00:29:41,276 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2021-07-28 00:29:56,679 LOG installing frappe
+2021-07-28 00:29:56,679 DEBUG frappe-bench/env/bin/python -m pip install -q -U -e frappe-bench/apps/frappe 
+2021-07-28 00:32:17,991 DEBUG cd frappe-bench/apps/frappe && yarn install
+2021-07-28 00:33:52,999 DEBUG cd frappe-bench/apps/frappe && yarn install
+2021-07-28 00:33:53,649 DEBUG cd frappe-bench && bench build
+2021-07-28 00:33:53,913 INFO /usr/local/bin/bench build
+2021-07-28 00:34:50,348 LOG setting up backups
+2021-07-28 00:34:50,373 INFO Bench frappe-bench initialized
+2021-07-28 00:35:24,846 INFO /usr/local/bin/bench start
+2021-07-28 00:35:25,230 INFO /usr/local/bin/bench worker --queue default
+2021-07-28 00:35:25,320 INFO /usr/local/bin/bench serve --port 8000
+2021-07-28 00:35:25,330 INFO /usr/local/bin/bench watch
+2021-07-28 00:35:25,360 INFO /usr/local/bin/bench schedule
+2021-07-28 00:35:25,365 INFO /usr/local/bin/bench worker --queue long
+2021-07-28 00:35:25,404 INFO /usr/local/bin/bench worker --queue short
+2021-07-28 16:49:52,128 INFO /usr/local/bin/bench start
+2021-07-28 16:49:52,603 INFO /usr/local/bin/bench worker --queue short
+2021-07-28 16:49:52,664 INFO /usr/local/bin/bench watch
+2021-07-28 16:49:52,668 INFO /usr/local/bin/bench worker --queue long
+2021-07-28 16:49:52,671 INFO /usr/local/bin/bench schedule
+2021-07-28 16:49:52,687 INFO /usr/local/bin/bench serve --port 8000
+2021-07-28 16:49:52,713 INFO /usr/local/bin/bench worker --queue default
+2021-07-28 16:52:45,476 INFO /usr/local/bin/bench find .
+2021-07-28 16:55:24,506 INFO /usr/local/bin/bench new-app library_management
+2021-07-28 16:55:24,511 LOG creating new app library_management
+2021-07-28 16:56:00,365 LOG installing library_management
+2021-07-28 16:56:00,366 DEBUG ./env/bin/python -m pip install -q -U -e ./apps/library_management 
+2021-07-28 16:56:02,205 DEBUG bench build --app library_management
+2021-07-28 16:56:02,380 INFO /usr/local/bin/bench build --app library_management
+2021-07-28 16:58:48,580 INFO /usr/local/bin/bench new-site library.test
+2021-07-28 17:00:43,646 INFO /usr/local/bin/bench start
+2021-07-28 17:00:44,029 INFO /usr/local/bin/bench watch
+2021-07-28 17:00:44,093 INFO /usr/local/bin/bench worker --queue default
+2021-07-28 17:00:44,105 INFO /usr/local/bin/bench worker --queue long
+2021-07-28 17:00:44,138 INFO /usr/local/bin/bench schedule
+2021-07-28 17:00:44,148 INFO /usr/local/bin/bench worker --queue short
+2021-07-28 17:00:44,184 INFO /usr/local/bin/bench serve --port 8000
+2021-07-28 17:01:47,781 INFO /usr/local/bin/bench start
+2021-07-28 17:01:48,154 INFO /usr/local/bin/bench watch
+2021-07-28 17:01:48,179 INFO /usr/local/bin/bench schedule
+2021-07-28 17:01:48,238 INFO /usr/local/bin/bench worker --queue long
+2021-07-28 17:01:48,276 INFO /usr/local/bin/bench serve --port 8000
+2021-07-28 17:01:48,305 INFO /usr/local/bin/bench worker --queue short
+2021-07-28 17:01:48,341 INFO /usr/local/bin/bench worker --queue default
+2021-07-28 17:05:32,407 INFO /usr/local/bin/bench start
+2021-07-28 17:05:32,733 INFO /usr/local/bin/bench watch
+2021-07-28 17:05:32,814 INFO /usr/local/bin/bench serve --port 8000
+2021-07-28 17:05:32,879 INFO /usr/local/bin/bench worker --queue long
+2021-07-28 17:05:32,943 INFO /usr/local/bin/bench worker --queue default
+2021-07-28 17:05:32,971 INFO /usr/local/bin/bench worker --queue short
+2021-07-28 17:05:33,001 INFO /usr/local/bin/bench schedule
+2021-07-28 17:10:29,693 INFO /usr/local/bin/bench --site library.test add-to-hosts
+2021-07-28 17:31:02,791 INFO /usr/local/bin/bench --site library.test install-app library_management
+2021-07-28 17:31:19,799 INFO /usr/local/bin/bench --site library.test list-apps
+2021-07-28 17:32:14,649 INFO /usr/local/bin/bench --site library.test console
+2021-07-28 17:35:36,453 INFO /usr/local/bin/bench set-config -g developer_mode true
+2021-07-28 18:00:02,017 INFO /usr/local/bin/bench --verbose --site all backup
+2021-07-29 00:00:01,823 INFO /usr/local/bin/bench --verbose --site all backup
+2021-07-29 06:00:01,874 INFO /usr/local/bin/bench --verbose --site all backup
+2021-07-29 14:31:52,506 INFO /usr/local/bin/bench start
+2021-07-29 14:31:53,266 INFO /usr/local/bin/bench watch
+2021-07-29 14:31:53,332 INFO /usr/local/bin/bench worker --queue long
+2021-07-29 14:31:53,347 INFO /usr/local/bin/bench worker --queue default
+2021-07-29 14:31:53,366 INFO /usr/local/bin/bench serve --port 8000
+2021-07-29 14:31:53,372 INFO /usr/local/bin/bench worker --queue short
+2021-07-29 14:31:53,402 INFO /usr/local/bin/bench schedule
+2021-07-29 18:00:01,336 INFO /usr/local/bin/bench --verbose --site all backup
+2021-07-30 14:55:53,771 INFO /usr/local/bin/bench start
+2021-07-30 14:55:54,735 INFO /usr/local/bin/bench schedule
+2021-07-30 14:55:54,839 INFO /usr/local/bin/bench serve --port 8000
+2021-07-30 14:55:54,896 INFO /usr/local/bin/bench worker --queue long
+2021-07-30 14:55:54,921 INFO /usr/local/bin/bench worker --queue default
+2021-07-30 14:55:54,930 INFO /usr/local/bin/bench watch
+2021-07-30 14:55:54,948 INFO /usr/local/bin/bench worker --queue short

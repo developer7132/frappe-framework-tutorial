@@ -1,0 +1,6 @@
+2021-07-28 17:13:07,823 ERROR frappe New Exception collected with id: 2021-07-28 17:13:07.763288-127.0.0.1-0d6
+Site: library.test
+Form Dict: {'cmd': 'frappe.core.doctype.user.user.sign_up', 'email': 'njin@creativeadvtech.com', 'redirect_to': '', 'full_name': 'Nic'}
+2021-07-28 17:22:13,814 ERROR frappe New Exception collected with id: 2021-07-28 17:22:13.810010-127.0.0.1-843
+Site: library.test
+Form Dict: {'cmd': 'frappe.core.doctype.user.user.sign_up', 'email': 'njin@creativeadvtech.com', 'redirect_to': '', 'full_name': 'Nic'}
